@@ -15,17 +15,24 @@ const Swipper: React.FC = () => {
         <div className='h-80 md:h-96'>
           <img
             loading='lazy'
-            src='https://source.unsplash.com/random'
-            alt='slider-1'
+            src='https://i.postimg.cc/KvcYcyjd/Featured-Course.png'
+            alt='featured-course-1'
             className='w-full h-full object-cover'
           />
         </div>
-
         <div className='h-80 md:h-96'>
           <img
             loading='lazy'
-            src='https://source.unsplash.com/random'
-            alt='slider-2'
+            src='https://i.postimg.cc/KvcYcyjd/Featured-Course.png'
+            alt='featured-course-2'
+            className='w-full h-full object-cover'
+          />
+        </div>
+        <div className='h-80 md:h-96'>
+          <img
+            loading='lazy'
+            src='https://i.postimg.cc/KvcYcyjd/Featured-Course.png'
+            alt='featured-course-3'
             className='w-full h-full object-cover'
           />
         </div>
