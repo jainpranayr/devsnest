@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    @apply bg-slate-900 text-gray-200 scrollbar-hide;
+  }
+}
+
+@layer components {
+  .btn-cta {
+    @apply inline-flex items-center justify-center p-1 text-base font-medium bg-indigo-700 text-white rounded hover:scale-95 cursor-pointer border border-transparent hover:scale-95;
+  }
+}
