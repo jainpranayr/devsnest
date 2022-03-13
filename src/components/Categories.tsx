@@ -21,7 +21,7 @@ const Categories: React.FC = () => {
           <div className='-my-2'>
             <div className='box-content py-2 relative h-80 overflow-x-auto xl:overflow-visible scrollbar-hide'>
               <div className='absolute min-w-screen-xl px-4 flex space-x-8 sm:px-6 lg:px-8 xl:relative xl:px-0 xl:space-x-0 xl:grid xl:grid-cols-5 xl:gap-x-8'>
-                {categories.map(category => (
+                {categories.slice(1).map(category => (
                   <Link
                     key={category.title}
                     href={`/courses/${category.slug}`}

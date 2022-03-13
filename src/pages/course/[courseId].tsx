@@ -11,7 +11,7 @@ const CoursePage = () => {
     <Layout
       title={`${courseData?.title && Capitalize(courseData.title)} - Devsnest`}>
       {/* <div className='bg-white'> */}
-      <div className='mx-auto py-8 px-4 sm:py-12 sm:px-6 lg:max-w-7xl lg:px-8'>
+      <div className='max-w-xl mx-auto py-8 px-4 sm:py-12 sm:px-6 lg:max-w-7xl lg:px-8'>
         {/* Product */}
         <div className='lg:grid lg:grid-rows-1 lg:grid-cols-7 lg:gap-x-8 lg:gap-y-10 xl:gap-x-16'>
           {/* Product image */}

@@ -8,7 +8,7 @@ const Navbar: React.FC = () => {
 
   return (
     <nav className='border-b-2 border-slate-700 sticky top-0 right-0 z-10 bg-slate-900'>
-      <div className='max-w-7xl mx-auto px-4 py-2 sm:px-10 lg:px-8'>
+      <div className='max-w-xl lg:max-w-7xl mx-auto py-2 lg:px-8'>
         <div className='flex justify-between'>
           <div className='flex space-x-7 items-center'>
             {/* logo */}
@@ -58,7 +58,7 @@ const Navbar: React.FC = () => {
         <ul className={navOpen ? 'block z-10' : 'hidden'}>
           {navLinks.map(link => (
             <Link href={link.href} key={link.name}>
-              <a className='block text-sm px-12 py-2 font-medium text-gray-400 hover:text-gray-100 hover:bg-gray-800 cursor-pointer'>
+              <a className='block text-sm px-[72px] py-2 font-medium text-gray-400 hover:text-gray-100 hover:bg-gray-800 cursor-pointer'>
                 {link.name}
               </a>
             </Link>

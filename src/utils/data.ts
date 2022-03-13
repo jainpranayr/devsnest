@@ -24,6 +24,12 @@ import {
 
 export const categories: Category[] = [
   {
+    title: 'All',
+    slug: 'all',
+    image: 'https://i.postimg.cc/0NnckzqV/4380747.jpg',
+    icon: BsCodeSlash,
+  },
+  {
     title: 'Development',
     slug: 'development',
     image: 'https://i.postimg.cc/0NnckzqV/4380747.jpg',
