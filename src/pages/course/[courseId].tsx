@@ -10,11 +10,10 @@ const CoursePage = () => {
   return (
     <Layout
       title={`${courseData?.title && Capitalize(courseData.title)} - Devsnest`}>
-      {/* <div className='bg-white'> */}
       <div className='max-w-xl mx-auto py-8 px-4 sm:py-12 sm:px-6 lg:max-w-7xl lg:px-8'>
-        {/* Product */}
+        {/* Course */}
         <div className='lg:grid lg:grid-rows-1 lg:grid-cols-7 lg:gap-x-8 lg:gap-y-10 xl:gap-x-16'>
-          {/* Product image */}
+          {/* Course image */}
           <div className='lg:row-end-1 lg:col-span-4'>
             <div className='aspect-w-4 aspect-h-3 rounded-lg bg-gray-100 overflow-hidden'>
               <img
@@ -25,17 +24,13 @@ const CoursePage = () => {
             </div>
           </div>
 
-          {/* Product details */}
+          {/* Course details */}
           <div className='max-w-2xl mx-auto mt-14 sm:mt-16 lg:max-w-none lg:mt-0 lg:row-end-2 lg:row-span-2 lg:col-span-3'>
             <div className='flex flex-col-reverse'>
               <div className='mt-4'>
                 <h1 className='text-2xl font-extrabold tracking-tight text-gray-100 sm:text-3xl'>
                   {courseData?.title}
                 </h1>
-
-                <h2 id='information-heading' className='sr-only'>
-                  Product information
-                </h2>
               </div>
 
               <div>
@@ -88,7 +83,6 @@ const CoursePage = () => {
           </div>
         </div>
       </div>
-      {/* </div> */}
     </Layout>
   )
 }

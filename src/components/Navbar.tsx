@@ -8,7 +8,7 @@ const Navbar: React.FC = () => {
 
   return (
     <nav className='border-b-2 border-slate-700 sticky top-0 right-0 z-10 bg-slate-900'>
-      <div className='max-w-xl lg:max-w-7xl mx-auto py-2 lg:px-8'>
+      <div className='max-w-2xl mx-auto px-4 sm:px-10 lg:px-8 lg:max-w-7xl my-2'>
         <div className='flex justify-between'>
           <div className='flex space-x-7 items-center'>
             {/* logo */}
@@ -26,7 +26,7 @@ const Navbar: React.FC = () => {
             <div className='hidden md:flex items-center space-x-1 '>
               {navLinks.map(link => (
                 <Link href={link.href} passHref key={link.name}>
-                  <a className='py-4 px-2 text-gray-400 hover:text-gray-100 font-medium text-sm cursor-pointer'>
+                  <a className='px-2 text-gray-400 hover:text-gray-100 font-medium text-sm cursor-pointer'>
                     {link.name}
                   </a>
                 </Link>
@@ -36,7 +36,7 @@ const Navbar: React.FC = () => {
 
           {/* CTA */}
           <div className='hidden md:flex items-center space-x-3 '>
-            <a className='py-2 px-2 font-medium text-sm text-gray-400 hover:text-gray-100 hover:bg-gray-800 rounded cursor-pointer'>
+            <a className='p-2 font-medium text-sm text-gray-400 hover:text-gray-100 hover:bg-gray-800 rounded cursor-pointer'>
               Log In
             </a>
             <a className='btn-cta'>Sign Up</a>

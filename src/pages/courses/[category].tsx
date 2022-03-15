@@ -41,29 +41,37 @@ const CoursesPage = () => {
       title={`${
         courseCategory && Capitalize(courseCategory.toString())
       } Courses - Devsnest`}>
-      <ul className='flex flex-row px-2 justify-between list-none overflow-scroll scrollbar-hide max-w-full mx-auto'>
-        {categories.map(category => (
-          <li
-            className={`flex text-center justify-center items-center mt-6 cursor-pointer hover:bg-slate-700 rounded ${
-              courseCategory === category.slug &&
-              'bg-indigo-700 hover:bg-indigo-700 text-white'
-            }`}
-            key={category.title}>
-            <button
-              value={category.slug}
-              className='block py-2 px-4 font-medium text-xs leading-tight'
-              onClick={handleClick}>
-              {category.title}
-            </button>
-          </li>
-        ))}
-      </ul>
-
-      <div className='max-w-2xl mx-auto px-4 sm:px-10 lg:px-8 lg:max-w-7xl my-4 md:my-8'>
-        <div className='grid grid-cols-1 gap-y-12 sm:grid-cols-2 sm:gap-x-6 lg:grid-cols-4 xl:gap-x-8'>
-          {courseData.map(course => (
-            <CourseCard key={course.id} course={course} />
+      <div className='min-h-[calc(100vh-140px)]'>
+        <ul className='flex overflow-scroll scrollbar-hide max-w-2xl mx-auto px-4 sm:px-10 lg:px-8 lg:max-w-7xl my-4'>
+          {categories.map(category => (
+            <li
+              className={`flex text-center justify-around items-center cursor-pointer hover:bg-slate-700 rounded ${
+                courseCategory === category.slug &&
+                'bg-indigo-700 hover:bg-indigo-700 text-white'
+              }`}
+              key={category.title}>
+              <button
+                value={category.slug}
+                className='block py-2 px-4 font-medium text-xs leading-tight'
+                onClick={handleClick}>
+                {category.title}
+              </button>
+            </li>
           ))}
+        </ul>
+
+        <div className='max-w-2xl mx-auto px-4 sm:px-10 lg:px-8 lg:max-w-7xl my-4 md:my-8'>
+          {courseData.length <= 0 ? (
+            <p className='text-center text-lg font-bold'>
+              Sorry No Courses Found.
+            </p>
+          ) : (
+            <div className='grid grid-cols-1 gap-y-12 sm:grid-cols-2 sm:gap-x-6 lg:grid-cols-4 xl:gap-x-8'>
+              {courseData.map(course => (
+                <CourseCard key={course.id} course={course} />
+              ))}
+            </div>
+          )}
         </div>
       </div>
     </Layout>

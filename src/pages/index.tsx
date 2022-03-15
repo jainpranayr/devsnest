@@ -11,7 +11,7 @@ import {
 const Home: NextPage = () => {
   return (
     <Layout title='Devsnest - The learning environment YOU deserve.'>
-      <div className='flex-1 max-w-7xl mx-auto px-4 sm:px-10 lg:px-8 '>
+      <div className='flex-1 max-w-7xl mx-auto px-4 sm:px-10 lg:px-8'>
         <Swipper />
         <Services />
         <Categories />
